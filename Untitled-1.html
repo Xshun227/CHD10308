@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           list-style: none;
+           list-style-type:none;
+         }
+        
+  .asd {
+    display: inline-block; /* 或者使用 'flex' */
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .asd>div {
+    width: 200px; /* 這將是父元素的寬度 */
+    height: 100px;
+    border: 1px solid red;
+  }
+</style>
+
+<div class="parent">
+  <div class="child"></div>
+</div>
+        
+    </style>
+<div class="box">
+   <div class="asd">
+        <div>
+            <p>Lorem ipsum,cing elit. Maiores quaerat, tempora ab, conse11111111111111111111111uptatum.</p>
+            <!-- <img src="https://fakeimg.pl/300x200/200"> -->
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consatur esse veniam sequi deserunt iste aut doloremque repellat voluptatum.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+
+
+.products-card{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    inset:0;
+    }
+.card-text{
+    margin-top: 30px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    }
+   
+    .card-text>*:not(.shop-button){  
+      
+        padding-bottom: 20px;
+    }
+    .card-text h3{
+        
+      font-weight: 500;
+        font-size: 20px;
+    }
+    .card-item img{
+        transform: scale(0.8);
+        clip-path: circle(50% at 50% 50%);
+        vertical-align: baseline
+    }
+    .money{
+     font-size: 18px;
+  
+     
+    }
+    
+    .number{
+        box-sizing: border-box;
+        background: #FFF;
+        display: flex;
+        border: 1px solid #CE7D2B;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .number span{
+      
+        vertical-align:middle;
+    }
+    
+    .shop-button{
+        box-sizing: border-box;
+       font-size: 20px;
+        width: 100%;
+        border: 1px solid #CE7D2B;
+        background: #DEA56A;
+        color: #FFF;
+        font-weight: 600;
+
+        
+    }
+    .button-add{
+        font-size: 24px;
+        border: none;
+        background-color: #FFF;
+                /* vertical-align: middle; */
+    }
+    .products-card>button{
+        box-sizing: border-box;
+        position: absolute;
+        top : 40%;
+        width: auto;
+        padding: 10px;
+        background-color: rgb(255, 255, 255, .5);
+        border: 1px solid #CE7D2B;
+
+    }
+</style>
+<div class="card-item">
+  <a href="products-shop.html"  target="_blank">
+   <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
+   <div class="card-text">
+           <h3>提拉米蘇</h3>
+           <div class="money">
+               NT:300
+           </div>
+           <div class="number">
+               <span>
+                   <button class="button-add" >
+                       -
+                   </button>
+               </span>
+               <span>1</span>
+               <span>
+                   <button class="button-add">
+                       +
+                   </button>
+               </span>
+           </div>
+           <button class="shop-button">
+               加入購物車
+           </button>
+           </div>
+       </a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

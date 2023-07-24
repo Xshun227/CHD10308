@@ -1,0 +1,70 @@
+.about-all{
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+   }
+   .title-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+   }
+   .crumbs>ol{
+    
+    display: flex;
+    justify-content: end;
+    color: #555555 ;
+   
+}
+.crumbs>ol>:last-child::before
+{
+    content: ">>";
+}
+   .about-title
+   {
+    display: inline-block;
+    text-align: center;
+    
+    margin: 80px 0 40px;
+   }
+   .about-card
+   {
+    padding-top: 100px;
+    display: flex;
+
+   }
+   .about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 37.5%;
+    color: #333;
+ 
+   }
+    .about-text  h2{
+        margin: auto     ;
+        font-size: 24px;
+        text-align: center;
+        writing-mode:vertical-lr
+        
+        
+    }
+
+    .about-text>p{
+        padding: 20px 60px 0px 60px;
+        font-size: 16px;
+    }
+   .about-card>img{
+    width: 62.5%;
+   }
+   .about-all>h2{
+    margin: 100px auto     ;
+    font-size: 36px;
+    text-align: center;
+    writing-mode:vertical-lr
+
+   }
+   .about-all .about-card:nth-child(2n){
+    flex-direction: row-reverse;
+
+}
