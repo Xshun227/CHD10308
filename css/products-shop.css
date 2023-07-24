@@ -1,0 +1,155 @@
+.productshop-all{
+
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+}
+.title-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 40px;
+
+   }
+
+   .crumbs>ol{
+    font-size: 16px;
+    display: flex;
+    justify-content: end;
+    color: #555555 ;
+   
+    }
+   ol>.less::before{
+        content: ">>";
+    }
+    
+    .shop-card>img{
+        clip-path: circle(50% at 50% 50%);
+    vertical-align: baseline;
+    }
+    .shop-text{
+        
+        background-color: #EAE0C1;
+        border-radius: 20px ; 
+        height: 400px;
+        width: 610px;
+        position: relative;
+        color: #333;
+    }
+    .shop-card{
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .shop-text>h2{
+        font-size: 24px;
+        margin:  30px;
+        font-weight: 600;
+    }
+    .textitem>p:not( .spec )	
+    {  width: 70%;
+        padding-bottom: 10px;
+
+    }
+    .textitem   {
+        margin: 30px;
+
+    }
+    select{
+        background-color: #F2F2EA;
+    }
+    .money-shop{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 5%;
+        bottom: 6%;
+    }
+    .money-shop>div{
+        text-align: center;
+        box-sizing: border-box;
+        width: 120px;
+        height: 40px;
+        border: 1px solid #CE7D2B;
+        line-height: 35px;
+      
+
+    }
+    .money-shop>button{
+        width: 150px;
+        height: 45px;    
+        border: 1px solid #CE7D2B;
+        background: #DEA56A;
+
+    }
+    .remind{
+        font-size: 24px;
+        margin: 50px 80px 20px;
+      
+        display: flex;
+        align-items: center;
+    }
+    .remind>img{
+        margin-right: 15px;
+        height: 25px;
+        width: 25px;
+    }
+   .remind-list{
+    margin-left: 80px;
+   }
+    .remind-list>li{
+        display: flex;
+        align-items: center;
+        font-size: 16px ;
+        font-weight: 400;
+        padding-bottom: 5px;
+
+    } 
+    .lozenge{
+        width: 10px;
+        height: 10px;
+      
+        transform: rotate(-45deg);
+        background: #CF3525; 
+        vertical-align: top;
+       }
+       .remind-list>li>p{
+        margin-left: 10px;
+       }
+
+.q-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+.q-block{
+    position: relative;
+    width: 550px;
+    height: 280px;
+    background: #FFF;
+    box-sizing: border-box;
+    /* border: 1px solid #CE7D2B; */
+    margin-bottom: 30px;
+}
+.q-block>div{
+    display: inline-block;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+  text-align: center;
+}
+.left-top{
+    border-radius: 30px 0px 0px 0px;
+}
+.right-top{
+    border-radius: 0px 30px 0px 0px;
+}
+.left-bottom{
+    border-radius: 0px 0px 0px 30px;
+}
+.right-bottom{
+    border-radius: 0px 0px 30px 0px;
+}
