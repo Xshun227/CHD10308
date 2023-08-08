@@ -1,6 +1,3 @@
-
-
-
 .slideshow { 
    width: 1200px;
     display: block;
@@ -13,13 +10,14 @@
 }
 
 .slideshow-text{
+    text-shadow: 0px 4px 3px  rgba(0, 0, 0, 0.6);
     font-size: 36px;
     color: #fff;
-  width: 100%;
+    width: 100%;
     position: absolute;
     top: 380px; 
-     text-align: center;
-     font-weight: 600;
+    text-align: center;
+    font-weight: 600;
 }
 /* -------------about-------------------------- */
 .about-block{
@@ -68,16 +66,21 @@
    margin: auto;
     margin-top: 100px;
     background-color: #EFEDE1;
+    /* background-color: #EFEDE1; */
     box-sizing: border-box;
-    border: 1px solid #C5BAAF;
+    padding:60px 0;
+    /* border: 1px solid #C5BAAF; */
     
     
     }
     .product-title{
+        margin: 30px 0;
+        width: 100%;
         line-height: 1.5;
         text-align: center;
     }
 .products-card{
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -90,19 +93,22 @@
     margin: auto;
     text-align: center;
     }
-    
+/*     
     .card-text>*:not(.shop-button){
         margin-bottom: 20px;
-    }
-    .card-text h3{
+    } */
+    card-text>*{
+        margin-bottom: 20px;
+    } 
+    .card-name{
         
+        /* margin: auto; */
+        margin: 20px 0;
+        text-align: center;
       font-weight: 500;
         font-size: 20px;
     }
-    .card-item img{
-        clip-path: circle(50% at 50% 50%);
-        vertical-align: baseline
-    }
+ 
     .money{
      font-size: 18px;
   
@@ -113,7 +119,6 @@
         box-sizing: border-box;
         background: #FFF;
         display: flex;
-        border: 1px solid #CE7D2B;
         justify-content: space-around;
         align-items: center;
         
@@ -127,7 +132,7 @@
         box-sizing: border-box;
        font-size: 20px;
         width: 100%;
-        border: 1px solid #CE7D2B;
+        /* border: 1px solid #CE7D2B; */
         background: #DEA56A;
         color: #FFF;
         font-weight: 600;
@@ -138,7 +143,7 @@
         font-size: 24px;
         border: none;
         background-color: #FFF;
-                /* vertical-align: middle; */
+        /* vertical-align: middle; */
     }
     .products-card>button{
         box-sizing: border-box;
@@ -193,7 +198,7 @@
     box-sizing: border-box;
     border:#CE7D2B 1px solid;
     padding: 30px 30px 0px 30px;
-    background-color: #EAE0C1;
+    background-color: #EFEDE1;
     color:#333;
   
 }

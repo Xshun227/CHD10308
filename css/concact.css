@@ -1,0 +1,39 @@
+.concact-img{
+    width: 1200px;
+    margin: 0 auto;
+    vertical-align: top;
+
+
+}
+section{
+    margin-top: 60px;
+}
+.concact-text{
+    width: 60%;
+    font-size: 20px;
+    text-indent: 2em;
+    
+    margin: 0 auto;
+    margin-top: 60px;
+    line-height: 1.5;
+    
+}
+.concact-container>div
+{
+    background-color:#EFEDE1; ;
+    padding: 20px;
+    font-size:20px ;
+}
+.concact-container{
+    
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.concact-title{
+    text-align: center;
+
+}

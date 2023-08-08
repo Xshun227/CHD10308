@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,8 +6,21 @@
     color: inherit; /* 移除超連結顏色 */
      text-decoration: none;  /* 移除超連結底線 */
      font-family: Noto Serif TC;
- 
+     /* font-family:jf-openhuninn; */
   }
+
+  @font-face {
+    font-family:"jf-openhuninn";
+    /* src: url("xshun227.github.io/CHD10308/jf-openhuninn-2.0.ttf"); */
+    src: url('../jf-openhuninn-2.0.ttf');
+  }
+  @font-face {
+    font-family: "Montserrat";
+    /* src: url("xshun227.github.io/CHD10308/jf-openhuninn-2.0.ttf"); */
+    src: url('../Montserrat-Italic-VariableFont_wght.ttf');
+  }
+ 
+  
  body{
      
      background-color: #F2F2EA;
@@ -16,45 +29,48 @@
      top: 0;
      z-index: 1000;
      /* background: #EDD8C3; */
- 
+     font-family: jf-openhuninn;
      background: linear-gradient(180deg, #EDE2D6 0%, rgba(199, 174, 150, 0.29) 99.98%, #EEE6DE 99.99%, rgba(238, 230, 222, 0.48) 100%);
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
      backdrop-filter: blur(4px);
- /* 
-     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-     backdrop-filter: blur(4px); */
      width: 100%;
      height: 70px; 
      position: fixed;
      padding:0 20px;
      justify-content: space-between;
- 
  }
  .nav{
      display: flex;
      align-items: center;
-   
-     
+ }
+ .navbar-nav>li>a{
+     font-weight: 400;
+    font-family: jf-openhuninn;
  }
  .nav-right{
- width: 70%;
- display: flex;
-     align-items: end;
-
+    width: 70%;
+     display: flex;
+     justify-content: end;
+     margin-right: 2%;;
+    
  }
+ /* #inin>a{
+    font-family: jf-openhuninn;
+
+ } */
  .iocn-name img{
      transform: scale(0.9);
  }
   .navbar-nav{
      box-sizing: border-box;
-     /* width: 60%; */
      font-size: 20px; 
      justify-content: end;
-     font-weight: 600;
- 
+     font-weight: 600;   
  } 
+ 
+ 
  .nav>li{
-     padding:  0 50px;
+     padding:  0 30px;
  }
  .nav-button>button{
      border: none;
@@ -62,34 +78,67 @@
      margin: 0 30px;
  }
 
+ .nav-button{
+    justify-content:end ;
+}
  .to-more{
     display: flex;
    font-size: 16px; 
    text-decoration:underline;
    /* margin-top: 12%; */
-   right: 1px;
+   right: 2%;
    bottom:2%;
    position: absolute;
    font-weight: 600;
    justify-content:end;
 }
+.to-more>p{
+    margin-right: 10px;
+    padding-bottom:6% ;
 
+}
+    .arrow-a{
+    width: 20%;
+    height: 20%;
+    color: #FFF;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    position:absolute;
+    top:5px; 
+    right:5px;
+    }
+    .red-more{
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+        background-color:#cf3525 ;
+        position: relative;
+        transform: rotate(45deg);
+    }
+  
+    .arrow-line{
+        position:absolute;
+        color: #FFF;
+        width: 70%;
+        border-width:0  0 1px 0;
+        top:10px;
+        right: 3.5px;
+        border-style: solid;
+        transform: rotate(-45deg);
+    }
 
 
 .t-title-style
-{
+{  
     font-size: 36px;
     font-weight: 600;
     color: #333;
-    
 }
 .t-style-e{
-    
     font-family: Montserrat;
     font-size: 20px;
     /* color: #333; */
     color: #911010  ;
-  
     font-weight: 400;
 }
 
@@ -101,7 +150,6 @@
     position: absolute;
     left: 4%;
     top: 6%;
-
 } 
 
 
@@ -124,6 +172,7 @@
     
     .card-text>*:not(.shop-button){
         margin-bottom: 20px;
+
     }
     .card-text h3{
         
@@ -132,37 +181,37 @@
     }
     
     .circle-img>img{  
-       
+     
         /* clip-path: circle(162px at 50% 50%); */
-        /* transform: scale(1); */
-        vertical-align: top;
+        transform: scale(1); 
+
+        /* vertical-align: top;  */
          
     }
     .circle-img{
+        /* border: 2px solid black; */
+
        width: 291.6px;
         height: 291.6px;
         border-radius:50%;
         overflow:hidden;
-       
     }
 
-    .circle-img>img:hover{
-            transform: scale(1.1);
+     .circle-img>img:hover{
+            transform: scale(1.2);
             transition: all 0.6s ease-out;
-    }
+    } 
        
 
     .money{
      font-size: 18px;
-  
-     
     }
     
     .number{
         box-sizing: border-box;
         background: #FFF;
         display: flex;
-        border: 1px solid #CE7D2B;
+        /* border: 1px solid #CE7D2B; */
         justify-content: space-around;
         align-items: center;
         
@@ -176,17 +225,24 @@
         box-sizing: border-box;
        font-size: 20px;
         width: 100%;
-        border: 1px solid #CE7D2B;
+        border: 1px solid #DEA56A;
         background: #DEA56A;
         color: #FFF;
         font-weight: 600;
+        cursor: pointer;
+
 
         
+    }
+    .shop-button:hover{
+        color:#814524;
+
     }
     .button-add{
         font-size: 24px;
         border: none;
         background-color: #FFF;
+        cursor: pointer;
                 /* vertical-align: middle; */
     }
     .products-card>button{
@@ -201,11 +257,9 @@
     }
 /* ----------------------page------------------------- */
     .pager{ 
-    
         background-color: white;
         border:#CE7D2B 1px solid;
-        border-radius: 20px ; 
-    
+        border-radius: 20px; 
          margin: 50px;
         display: flex;
         justify-content:space-between;
@@ -250,9 +304,10 @@
     font-weight: normal;
     }
 .tibame{
-font-size: 12px;
+font-size: 14px;
 background-color: #EDD8C3; 
   text-align: center;
+
 
 }
 .footer-icon {
