@@ -56,6 +56,7 @@
 
     }
     select{
+        margin: 20px 0;
         background-color: #F2F2EA;
     }
     .money-shop{
@@ -131,21 +132,33 @@
     background: #FFF;
     box-sizing: border-box;
     /* border: 1px solid #CE7D2B; */
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    overflow: hidden;
+}
+.q-block img {
+     width: 100%;
+    height: 100%;
 }
 .q-block>div{
-    display: inline-block;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+   
+    position: absolute;
+    font-size: 20px;
+    top: 80%;
+    width: 100%;
+    color:#DEA56A ;
+ 
   text-align: center;
+}
+.q-block p{
+    text-shadow: 1px 2px 2px  rgba(39, 37, 37, 0.6);
 }
 .left-top{
     border-radius: 30px 0px 0px 0px;
+   
 }
 .right-top{
     border-radius: 0px 30px 0px 0px;
+
 }
 .left-bottom{
     border-radius: 0px 0px 0px 30px;

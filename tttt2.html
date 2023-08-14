@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type:none;
+    color: inherit; /* 移除超連結顏色 */
+     text-decoration: none;  /* 移除超連結底線 */
+     font-family: Noto Serif TC;
+     letter-spacing: 0.2rem;
+  }
+    .products-block{
+        position: relative;
+   width: 1200px;
+   margin: auto;
+    margin-top: 100px;
+    background-color: #EFEDE1;
+    /* background-color: #EFEDE1; */
+    box-sizing: border-box;
+    padding:60px 0;
+    /* border: 1px solid #C5BAAF; */
+    
+    
+    }
+    .product-title{
+        margin: 30px 0;
+        width: 100%;
+        line-height: 1.5;
+        text-align: center;
+    }
+.products-card{
+    /* width: 1114.78px;  */
+    width: 1110px; 
+    display: flex;
+    margin: auto;
+    position: relative;
+    inset:0;
+   
+    overflow: hidden; 
+    /* white-space: nowrap; */
+
+    }
+    .card-item{ 
+        display: inline-block;
+        /* margin:30px 40px  ; */
+        box-sizing: border-box;
+        padding:30px 40px ;
+
+    }
+
+     .card-name {
+        /* margin: auto; */
+        margin: 20px 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+    }
+.card-text{
+    margin-top: 30px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    }
+    
+    .card-text>*:not(.shop-button){
+        margin-bottom: 20px;
+
+    }
+    .card-text h3{
+        
+      font-weight: 500;
+        font-size: 20px;
+    }
+    .circle-img>img{  
+     
+     /* clip-path: circle(162px at 50% 50%); */
+     transform: scale(1); 
+
+     /* vertical-align: top;  */
+      
+ }
+ .circle-img{
+     /* border: 2px solid black; */
+
+    width: 291.6px;
+     height: 291.6px;
+     border-radius:50%;
+     overflow:hidden;
+ }
+
+  .circle-img>img:hover{
+         transform: scale(1.1);
+         transition: all 0.6s ease-out;
+ } 
+    
+
+ .money{
+  font-size: 18px;
+ }
+ 
+ .number{
+     box-sizing: border-box;
+     background: #FFF;
+     display: flex;
+     /* border: 1px solid #CE7D2B; */
+     justify-content: space-around;
+     align-items: center;
+     
+ }
+ .number span{
+   
+     vertical-align:middle;
+ }
+ 
+ .shop-button{
+     box-sizing: border-box;
+    font-size: 20px;
+     width: 100%;
+     border: 1px solid #DEA56A;
+     background: #DEA56A;
+     color: #FFF;
+     font-weight: 600;
+     cursor: pointer;
+
+     
+ }
+ .shop-button:hover{
+     color:#814524;
+
+ }
+ .button-add{
+     font-size: 24px;
+     border: none;
+     background-color: #FFF;
+     cursor: pointer;
+             /* vertical-align: middle; */
+ }
+ .products-block>button{
+     box-sizing: border-box;
+     position: absolute;
+     top : 40%;
+     width: auto;
+     padding: 15px;
+     font-size: 20px;
+     background-color: rgb(255, 255, 255, .5);
+     /* border: 1px solid #CE7D2B; */
+     border:0;
+
+ }
+
+    .card-text>*:not(.shop-button){
+        margin-bottom: 20px;
+    } */
+    card-text>*{
+        margin-bottom: 20px;
+    } 
+    .products-block>button:hover{
+        background-color: #717171;
+        color: #FFF;
+    }
+    .item-right{
+        right: 0%;
+        border-radius: 8px 0 0 8px; 
+    }
+
+    .item-left{
+
+        left: 0%;
+        border-radius: 8px 0 0 8px; 
+        transform: rotate(180deg);
+    }
+
+
+
+
+
+    </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+    //=========================1================
+// $(document).ready(function() {
+//     let $productsCard = $('.products-card');
+//     let scrollitem = $('.card-item').outerWidth(true);
+
+//     $('.item-right').click(function() {
+//         // Take the first item and move it to the end
+//         let $firstItem = $productsCard.find('.card-item:first');
+//         let $firstItem = $('.card-item:first');
+
+
+//         $productsCard.append($firstItem);
+
+//         // Adjust the scroll position
+//         $productsCard.scrollLeft($productsCard.scrollLeft() - scrollitem);
+//     });
+
+//     $('.item-left').click(function() {
+//         // Take the last item and move it to the beginning
+//         var $lastItem = $productsCard.find('.card-item:last');
+//         $productsCard.prepend($lastItem);
+
+//         // Adjust the scroll position
+//         $productsCard.scrollLeft($productsCard.scrollLeft() + scrollitem);
+//     });
+// });
+//------------------------2------------------------------------------------
+// $(document).ready(function() {
+//     let $productsCard = $('.products-card');
+//     let scrollitem = $('.card-item').outerWidth(true);
+
+//     $('.item-right').click(function() {
+//         // Calculate the current scroll position before any DOM manipulations
+//         let currentScroll = $productsCard.scrollLeft();
+
+//         // Take the first item and move it to the end
+//         let $firstItem = $productsCard.find('.card-item:first');
+//         $productsCard.append($firstItem);
+
+//         // Adjust the scroll position
+//         let newScroll = currentScroll + scrollitem - $firstItem.outerWidth(true);
+//         $productsCard.scrollLeft(newScroll);
+//     });
+
+//     $('.item-left').click(function() {
+//         // Calculate the current scroll position before any DOM manipulations
+//         let currentScroll = $productsCard.scrollLeft();
+
+//         // Take the last item and move it to the beginning
+//         let $lastItem = $productsCard.find('.card-item:last');
+//         $productsCard.prepend($lastItem);
+
+//         // Adjust the scroll position
+//         let newScroll = currentScroll - scrollitem + $lastItem.outerWidth(true);
+//         $productsCard.scrollLeft(newScroll);
+//     });
+// });
+$(document).ready(function() {
+    let $productsCard = $('.products-card');
+    let scrollitem = $('.card-item').outerWidth(true);
+    //  + parseInt($('.card-item').css('margin-right'), 10);
+
+    $('.item-right').click(function() {
+        let currentScroll = $productsCard.scrollLeft();
+
+        // Take the first item and move it to the end
+        let $firstItem = $productsCard.find('.card-item:first');
+        $productsCard.append($firstItem);
+
+        $productsCard.scrollLeft(currentScroll);
+    });
+
+    $('.item-left').click(function() {
+        let currentScroll = $productsCard.scrollLeft();
+
+        // Take the last item and move it to the beginning
+        let $lastItem = $productsCard.find('.card-item:last');
+        $productsCard.prepend($lastItem);
+
+        $productsCard.scrollLeft(currentScroll);
+    });
+});
+</script>
+   <div class="products-block">
+    <!-- <h2 class="t-title-style product-title">
+        熱銷商品
+        <p class="t-style-e">
+            bestsellers
+        </p>
+    </h2> -->
+    <div class="products-card">
+        <div class="card-item">
+            <a href="products-shop.html" >
+                <div class="circle-img">
+                      <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
+                </div>
+              
+                    <h3 class="card-name">提拉米蘇</h3>
+            </a>    
+            <div class="card-text">  
+                <div class="money">
+                            NT:300
+                </div>
+                <div class="number">
+                    <span>
+                        <button class="button-add" >
+                            –
+                        </button>
+                    </span>
+                    <span>1</span>
+                    <span>
+                        <button class="button-add">
+                            +
+                        </button>
+                    </span>
+                </div>
+                    <button class="shop-button">
+                        加入購物車
+                    </button>
+                   
+         </div>
+        
+        </div>
+        <div class="card-item">
+            <a href="products-shop.html" >
+                <div class="circle-img">
+                        <img src="pic/lemon_compress.jpg" alt="Lemontart">
+                </div>
+            
+                    <h3  class="card-name">檸檬塔</h3>
+            </a> 
+            <div class="card-text">
+                <div class="money">
+                        NT:200
+                </div>
+                <div class="number">
+                    <span>
+                        <button class="button-add" >
+                            –
+                        </button>
+                    </span>
+                    <span>1</span>
+                    <span>
+                        <button class="button-add">
+                            +
+                        </button>
+                    </span>
+                </div>
+                    <button class="shop-button">
+                        加入購物車
+                    </button>
+                   
+            </div>
+        </div>        
+        
+        <div class="card-item">
+            <a href="products-shop.html" >
+                <div class="circle-img">
+                    <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                </div>
+                   
+                    <h3 class="card-name">可頌/3入組</h3>
+            </a> 
+            <div class="card-text">
+                    <div class="money">
+                        NT:300
+                    </div>
+                    <div class="number">
+                        <span>
+                            <button class="button-add" >
+                                –                      
+                             </button>
+                        </span>
+                        <span>1</span>
+                        <span>
+                            <button class="button-add">
+                                +
+                            </button>
+                        </span>
+                    </div>
+                    <button class="shop-button">
+                        加入購物車
+                    </button>
+                   
+            </div>
+                    
+        </div>
+
+        <div class="card-item">
+            <a href="products-shop.html" >
+                <div class="circle-img">
+                    <img src="pic/cheesecakes_compress.jpg" alt="Tiramisu">
+                </div>
+                   
+                    <h3 class="card-name">起司蛋糕</h3>
+            </a> 
+            <div class="card-text">
+                    <div class="money">
+                        NT:250
+                    </div>
+                    <div class="number">
+                        <span>
+                            <button class="button-add" >
+                                –                      
+                             </button>
+                        </span>
+                        <span>1</span>
+                        <span>
+                            <button class="button-add">
+                                +
+                            </button>
+                        </span>
+                    </div>
+                    <button class="shop-button">
+                        加入購物車
+                    </button>
+                   
+            </div>
+        </div>
+
+            <div class="card-item">
+                <a href="products-shop.html" >
+                    <div class="circle-img">
+                        <img src="pic/Chocolate-Ganache-Tart_compress.jpg" alt="Tiramisu">
+                    </div>
+                       
+                        <h3 class="card-name">生巧克力塔</h3>
+                </a> 
+                <div class="card-text">
+                        <div class="money">
+                            NT:600
+                        </div>
+                        <div class="number">
+                            <span>
+                                <button class="button-add" >
+                                    –                      
+                                 </button>
+                            </span>
+                            <span>1</span>
+                            <span>
+                                <button class="button-add">
+                                    +
+                                </button>
+                            </span>
+                        </div>
+                        <button class="shop-button">
+                            加入購物車
+                        </button>
+                       
+                </div>
+                    
+            </div>
+           
+</div> 
+            <button class="item-right" >❯</button>
+            <button class="item-left">❯</button>
+        
+</div>
+</body>
+</html>

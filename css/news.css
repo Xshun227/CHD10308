@@ -34,6 +34,7 @@
 }
 .news-big{
     margin-left: 85px;
+    
     box-sizing: border-box;
     
 }
@@ -41,7 +42,8 @@
     margin: 20px 0 10px;
     font-size: 20px;
 }
-.news-big.img{
+.news-big>img{
+    width: 1020px;
     vertical-align: top;
 }
 .big-line{

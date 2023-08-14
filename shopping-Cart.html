@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all-style.css">
+    <link rel="stylesheet" href="css/shopping-Cart.css">
+</head>
+<body>
+    <nav class="navbar nav ">
+        <div class="iocn-name" >
+            <a href="index.html">
+                <img src="pic/icon/iocntopic2.svg" alt="icon">
+            </a>
+        </div >
+        <div class="nav-right nav">
+                <ul class="navbar-nav nav" > 
+                    <li >
+                        <a  href="products.html">產品</a>
+                    </li>
+                    <li>
+                        <a href="news.html">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">關於我們</a>
+                    </li>
+                    <li>
+                        <a href="concact.html">聯絡我們</a>
+                    </li>
+                </ul>
+            
+            <div class="nav nav-button ">
+                <button >
+                        <a href="#">
+                            <img src="pic/icon/logoicon.png" alt="login">
+                        </a>
+                </button>   
+                <button >
+                        <a href="#">
+                            <img src="pic/icon/icon _shopping bag_.png" alt="shooping">
+                        </a>
+              </button>    
+            </div> 
+        </div>
+    </nav>
+    <div>
+
+        <h1 class="t-title-style shop-title">購物清單
+            <p class="t-style-e">Shopping cart</p>
+        </h1>
+        <div class="crumbs">
+            <ol>
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li class="less ">
+                    <a href="shopping-Cart.html">購物車</a>    
+                </li>
+            
+            </ol>
+        </div>
+        <div class="grid-continter">
+            <div class="grid-title">
+                <div>商品資訊</div>
+                <div>規格</div>
+                <div>數量</div>
+                <div>單價</div>
+                <div>小計</div>
+                <div>刪除</div>
+            </div>
+                <div class="grid-item">
+                    <div class="list-img">
+                        <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
+                        <p>提拉米蘇</p>
+                    </div>
+                    <div>
+                        <select>
+                            <option value="">-長x寬x高-cm</option>
+                            <option value="">20x20x22-cm</option>
+                            <option value="">40x40x22-cm</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="number-list">
+                            <button class="button-add" >
+                                –
+                            </button>
+                        
+                            <span>1</span>
+                        
+                            <button class="button-add">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            NT:250
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            NT:250
+                        </p>
+                    </div>
+                    <div>
+                        <button class="xxx"><div ></div></button>
+                    </div>
+                </div>
+        </div>
+        <div class="all-shop">
+            <p>共
+                <span class="red">1</span>件
+            </p>
+            <p>總金額$
+                <span class="red all-price">250</span>元
+            </p>
+        </div>
+    
+        <h2 class="line-shop"> 付款配送</h2>
+        <div class="pay-deliver">
+            <div>
+                <select class="border-input " >
+                    <option value="">選擇付款方式</option>
+                    <option value="">ATM</option>
+                    <option value="">LINE Play</option>
+                    <option value="">信用卡</option>
+                </select>
+            </div>
+            <div>
+                <select class="border-input " >
+                    <option value="">選擇配送方式</option>
+                    <option value="">宅配</option>
+                    <option value="">門市取貨</option>
+                </select>
+            </div>
+        </div>
+        <h3 class="line-shop">收件人資訊</h3>
+        <div class="information-table">
+            <label for="">收件人姓名</label>
+            <input class="border-input "  type="text">
+            <label for="">收件人手機</label>
+            <input  class="border-input " type="tel">
+            <label for="">收件人郵箱</label>
+            <input  class="border-input " type="email">
+            <label for="">備註</label>
+            <textarea class="border-input "  name="" id=""  rows="5"></textarea>
+            <button>確認提交</button>
+        </div>
+    </div>
+</body>
+</html>

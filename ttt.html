@@ -44,18 +44,32 @@
         overflow:hidden;
         border: 2px solid black;
     }
+
+
+    input {
+    border: 1px solid #ccc;  /* 默認邊框顏色和粗細 */
+    padding: 8px 12px;
+    transition: border 0.3s;  /* 平滑的邊框變化效果 */
+}
+
+/* 當 <input> 獲得焦點時的樣式 */
+input:focus {
+    border: 3px solid #007BFF;  /* 獲得焦點時的邊框顏色和粗細 */
+   outline: none;    /*移除預設的外框 */
+}
     </style>
     <!-- <div class="red-more" >
         <div class="arrow-a"></div>
         <div class="arrow-line"></div>
     </div> -->
     <a href="products-shop.html" >
-        <div class="circle-img">
+        <div class="circlein-img">
                 <img src="pic/lemon_compress.jpg" alt="Lemontart">
         </div>
     
             <h3  class="card-name">檸檬塔</h3>
     </a> 
-    
+    <label for=""></label>
+    <input type="text">
 </body>
 </html>

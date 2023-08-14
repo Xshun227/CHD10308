@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>products</title>
+    <title>產品</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,12 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all-style.css">
     <link rel="stylesheet" href="css/products.css">
+
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/products.js"></script>
 </head>
 <body>
     <nav class="navbar nav ">
         <div class="iocn-name" >
             <a href="index.html">
-                <img src="pic/icon/iocntopic_compressed.svg" alt="icon">
+                <img src="pic/icon/iocntopic2.svg" alt="icon">
             </a>
         </div >
         <div class="nav-right nav">
@@ -54,41 +57,13 @@
     </nav>
 
 
-    <div class="products-all">
-        <div class="products-container">
-
-            <div class="products-list">  
-                <h1 class="t-title-style products-title"> 
+    <div class="products-all">  
+        <h1 class="t-title-style products-title"> 
                     商城產品
                     <p class="t-style-e">
                         products
                     </p>
-                </h1>            
-            <ul>
-
-                    <li>
-                        <a href="#">麵包</a>
-                    </li>
-
-                    <li>
-                        <a href="#">蛋糕</a>
-                    </li>
-
-                    <li>
-                        <a href="#">禮盒</a>
-                    </li>
-
-                    <li>
-                        <a href="#">其他</a>
-                    </li>
-                
-                </ul>
-            </div>
-                    
-            <div class="products-block">
-                    <h2 class=" products-line">
-                            熱銷商品
-                        <div class="crumbs">
+                    <div class="crumbs">
                         <ol>
                             <li>
                                 <a href="index.html">首頁</a>
@@ -98,82 +73,221 @@
                             </li>
                         </ol>
                     </div>
-                    </h2>
+                </h1>        
+               
+        <div class="products-container">
+
+            <div class="products-list">  
+                  
+            <ul>
+
+                    <li>
+                        <a href="#">熱銷商品</a>
+                    </li>
+                    <li>
+                        <a href="#">麵包</a>
+                    </li>
+
+                    <li>
+                        <a href="#">蛋糕</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">其他</a>
+                    </li>
+                    
+                </ul>
+             
+            </div>
+                    
+            <div class="products-block">
+                <div class="products-choose">
+                    <h2 class=" products-line">
+                            熱銷商品
+                        </h2>
                   
                     <div class="products-card">
                         <div class="card-item">
-                           <a href="products-shop.html" >
-                                <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>提拉米蘇</h3> 
-                            </a>
-                                        <div class="money">
-                                            NT:300
-                                        </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -
-                                                </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <button class="shop-button">
-                                            加入購物車
-                                        </button>
+                            <a href="products-shop.html" >
+                                <div class="circle-img">
+                                      <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
                                 </div>
-                           
+                              
+                                    <h3 class="card-name">提拉米蘇</h3>
+                            </a>    
+                            <div class="card-text">  
+                                <div class="money">
+                                            NT:300
+                                </div>
+                                <div class="number">
+                                    <span>
+                                        <button class="button-add" >
+                                            –
+                                        </button>
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        <button class="button-add">
+                                            +
+                                        </button>
+                                    </span>
+                                </div>
+                                    <button class="shop-button">
+                                        加入購物車
+                                    </button>
+                                   
+                         </div>
+                        
                         </div>
+                        <div class="card-item">
+                            <a href="products-shop.html" >
+                                <div class="circle-img">
+                                        <img src="pic/lemon_compress.jpg" alt="Lemontart">
+                                </div>
                             
+                                    <h3  class="card-name">檸檬塔</h3>
+                            </a> 
+                            <div class="card-text">
+                                <div class="money">
+                                        NT:200
+                                </div>
+                                <div class="number">
+                                    <span>
+                                        <button class="button-add" >
+                                            –
+                                        </button>
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        <button class="button-add">
+                                            +
+                                        </button>
+                                    </span>
+                                </div>
+                                    <button class="shop-button">
+                                        加入購物車
+                                    </button>
+                                   
+                            </div>
+                        </div>        
                         
                         <div class="card-item">
-                            <a href="products-shop.html"  target="_blank">
-                                <img src="pic/lemon_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>檸檬塔</h3>
-                            </a>
-                                        <div class="money">
-                                            NT:200
-                                        </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -
-                                                </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
+                            <a href="products-shop.html" >
+                                <div class="circle-img">
+                                    <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                                </div>
+                                   
+                                    <h3 class="card-name">可頌/3入組</h3>
+                            </a> 
+                            <div class="card-text">
+                                    <div class="money">
+                                        NT:300
+                                    </div>
+                                    <div class="number">
+                                        <span>
+                                            <button class="button-add" >
+                                                –                      
+                                             </button>
+                                        </span>
+                                        <span>1</span>
+                                        <span>
+                                            <button class="button-add">
+                                                +
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <button class="shop-button">
+                                        加入購物車
+                                    </button>
+                                   
+                            </div>
+                                    
+                            </div>
+                          
+                        </div>
+                        <div class="products-card">
+                            <div class="card-item">
+                                <a href="products-shop.html" >
+                                    <div class="circle-img">
+                                          <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
+                                    </div>
+                                  
+                                        <h3 class="card-name">提拉米蘇</h3>
+                                </a>    
+                                <div class="card-text">  
+                                    <div class="money">
+                                                NT:300
+                                    </div>
+                                    <div class="number">
+                                        <span>
+                                            <button class="button-add" >
+                                                –
+                                            </button>
+                                        </span>
+                                        <span>1</span>
+                                        <span>
+                                            <button class="button-add">
+                                                +
+                                            </button>
+                                        </span>
+                                    </div>
                                         <button class="shop-button">
                                             加入購物車
                                         </button>
-                                    
-                                </div>
+                                       
+                             </div>
                             
-                            
-                        </div>
-                        <div class="card-item">
-                            <a href="products-shop.html"  target="_blank">
-                                <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                            </div>
+                            <div class="card-item">
+                                <a href="products-shop.html" >
+                                    <div class="circle-img">
+                                            <img src="pic/lemon_compress.jpg" alt="Lemontart">
+                                    </div>
+                                
+                                        <h3  class="card-name">檸檬塔</h3>
+                                </a> 
                                 <div class="card-text">
-                                        <h3>可頌/3入組</h3>
-                            </a>
+                                    <div class="money">
+                                            NT:200
+                                    </div>
+                                    <div class="number">
+                                        <span>
+                                            <button class="button-add" >
+                                                –
+                                            </button>
+                                        </span>
+                                        <span>1</span>
+                                        <span>
+                                            <button class="button-add">
+                                                +
+                                            </button>
+                                        </span>
+                                    </div>
+                                        <button class="shop-button">
+                                            加入購物車
+                                        </button>
+                                       
+                                </div>
+                            </div>        
+                            
+                            <div class="card-item">
+                                <a href="products-shop.html" >
+                                    <div class="circle-img">
+                                        <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                                    </div>
+                                       
+                                        <h3 class="card-name">可頌/3入組</h3>
+                                </a> 
+                                <div class="card-text">
                                         <div class="money">
                                             NT:300
                                         </div>
                                         <div class="number">
                                             <span>
                                                 <button class="button-add" >
-                                                    -                              </button>
+                                                    –                      
+                                                 </button>
                                             </span>
                                             <span>1</span>
                                             <span>
@@ -185,29 +299,173 @@
                                         <button class="shop-button">
                                             加入購物車
                                         </button>
-                                   
+                                       
                                 </div>
-                           
-                            
-                        </div>
-            
-                    </div>
+                                        
+                                </div>
+                              
+                            </div>
+                            <div class="products-card">
+                                <div class="card-item">
+                                    <a href="products-shop.html" >
+                                        <div class="circle-img">
+                                              <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
+                                        </div>
+                                      
+                                            <h3 class="card-name">提拉米蘇</h3>
+                                    </a>    
+                                    <div class="card-text">  
+                                        <div class="money">
+                                                    NT:300
+                                        </div>
+                                        <div class="number">
+                                            <span>
+                                                <button class="button-add" >
+                                                    –
+                                                </button>
+                                            </span>
+                                            <span>1</span>
+                                            <span>
+                                                <button class="button-add">
+                                                    +
+                                                </button>
+                                            </span>
+                                        </div>
+                                            <button class="shop-button">
+                                                加入購物車
+                                            </button>
+                                           
+                                 </div>
+                                
+                                </div>
+                                <div class="card-item">
+                                    <a href="products-shop.html" >
+                                        <div class="circle-img">
+                                                <img src="pic/lemon_compress.jpg" alt="Lemontart">
+                                        </div>
+                                    
+                                            <h3  class="card-name">檸檬塔</h3>
+                                    </a> 
+                                    <div class="card-text">
+                                        <div class="money">
+                                                NT:200
+                                        </div>
+                                        <div class="number">
+                                            <span>
+                                                <button class="button-add" >
+                                                    –
+                                                </button>
+                                            </span>
+                                            <span>1</span>
+                                            <span>
+                                                <button class="button-add">
+                                                    +
+                                                </button>
+                                            </span>
+                                        </div>
+                                            <button class="shop-button">
+                                                加入購物車
+                                            </button>
+                                           
+                                    </div>
+                                </div>        
+                                
+                                <div class="card-item">
+                                    <a href="products-shop.html" >
+                                        <div class="circle-img">
+                                            <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                                        </div>
+                                           
+                                            <h3 class="card-name">可頌/3入組</h3>
+                                    </a> 
+                                    <div class="card-text">
+                                            <div class="money">
+                                                NT:300
+                                            </div>
+                                            <div class="number">
+                                                <span>
+                                                    <button class="button-add" >
+                                                        –                      
+                                                     </button>
+                                                </span>
+                                                <span>1</span>
+                                                <span>
+                                                    <button class="button-add">
+                                                        +
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <button class="shop-button">
+                                                加入購物車
+                                            </button>
+                                           
+                                    </div>
+                                            
+                                </div>
+                            </div>  
+                        
+                </div>
+           
 
-                    <div class="products-card">
+            
                     
-                        <div class="card-item">
-                           <a href="products-shop.html"  target="_blank">
-                                <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
+                <div class="products-choose">
+                        <h2 class=" products-line">
+                                麵包
+                            </h2>
+                      
+                        <div class="products-card">
+                            <div class="card-item">
+                                <a href="products-shop.html" >
+                                    <div class="circle-img">
+                                          <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                                    </div>
+                                  
+                                        <h3 class="card-name">可頌/3入組/</h3>
+                                </a>    
+                                <div class="card-text">  
+                                    <div class="money">
+                                                NT:300
+                                    </div>
+                                    <div class="number">
+                                        <span>
+                                            <button class="button-add" >
+                                                –
+                                            </button>
+                                        </span>
+                                        <span>1</span>
+                                        <span>
+                                            <button class="button-add">
+                                                +
+                                            </button>
+                                        </span>
+                                    </div>
+                                        <button class="shop-button">
+                                            加入購物車
+                                        </button>
+                                       
+                             </div>
+                            
+                            </div>
+                           
+                            
+                            <div class="card-item">
+                                <a href="products-shop.html" >
+                                    <div class="circle-img">
+                                        <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
+                                    </div>
+                                       
+                                        <h3 class="card-name">可頌/3入組</h3>
+                                </a> 
                                 <div class="card-text">
-                                        <h3>提拉米蘇</h3>
                                         <div class="money">
                                             NT:300
                                         </div>
                                         <div class="number">
                                             <span>
                                                 <button class="button-add" >
-                                                    -
-                                                </button>
+                                                    –                      
+                                                 </button>
                                             </span>
                                             <span>1</span>
                                             <span>
@@ -219,165 +477,198 @@
                                         <button class="shop-button">
                                             加入購物車
                                         </button>
+                                       
                                 </div>
-                            </a>
-                        </div>
-                            
-                        
-                        <div class="card-item">
-                            <a href="products-shop.html"  target="_blank">
-                                <img src="pic/lemon_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>檸檬塔</h3>
-                                        <div class="money">
-                                            NT:200
-                                        </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -
-                                                </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <button class="shop-button">
-                                            加入購物車
-                                        </button>
-                                    
+                                        
                                 </div>
-                            </a>
-                            
-                        </div>
-                        <div class="card-item">
-                            <a href="products-shop.html"  target="_blank">
-                                <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>可頌/3入組</h3>
-                                        <div class="money">
-                                            NT:300
+                                <div class="card-item">
+                                    <a href="products-shop.html" >
+                                        <div class="circle-img">
+                                            <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
                                         </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -                              </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <button class="shop-button">
-                                            加入購物車
-                                        </button>
-                                   
-                                </div>
-                            </a>
-                            
-                        </div>
-            
-                    </div>
+                                           
+                                            <h3 class="card-name">可頌/3入組</h3>
+                                    </a> 
+                                    <div class="card-text">
+                                            <div class="money">
+                                                NT:300
+                                            </div>
+                                            <div class="number">
+                                                <span>
+                                                    <button class="button-add" >
+                                                        –                      
+                                                     </button>
+                                                </span>
+                                                <span>1</span>
+                                                <span>
+                                                    <button class="button-add">
+                                                        +
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <button class="shop-button">
+                                                加入購物車
+                                            </button>
+                                           
+                                    </div>
+                                            
+                                    </div>
+                              
+                            </div>
+                </div>
+                <div class="products-choose">
+                    <h2 class=" products-line">
+                            蛋糕
+                        </h2>
+                  
                     <div class="products-card">
-                    
                         <div class="card-item">
-                           <a href="products-shop.html"  target="_blank">
-                                <img src="pic/Tiramisu_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>提拉米蘇</h3>
-                                        <div class="money">
-                                            NT:300
-                                        </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -
-                                                </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <button class="shop-button">
-                                            加入購物車
-                                        </button>
+                            <a href="products-shop.html" >
+                                <div class="circle-img">
+                                      <img src="pic/cheesecakes_compress.jpg" alt="Tiramisu">
                                 </div>
-                            </a>
-                        </div>
-                            
-                        
-                        <div class="card-item">
-                            <a href="products-shop.html"  target="_blank">
-                                <img src="pic/lemon_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>檸檬塔</h3>
-                                        <div class="money">
-                                            NT:200
-                                        </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -
-                                                </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <button class="shop-button">
-                                            加入購物車
-                                        </button>
-                                    
+                              
+                                    <h3 class="card-name">起司蛋糕</h3>
+                            </a>    
+                            <div class="card-text">  
+                                <div class="money">
+                                            NT:250
                                 </div>
-                            </a>
-                            
-                        </div>
-                        <div class="card-item">
-                            <a href="products-shop.html"  target="_blank">
-                                <img src="pic/Croissant_compress.jpg" alt="Tiramisu">
-                                <div class="card-text">
-                                        <h3>可頌/3入組</h3>
-                                        <div class="money">
-                                            NT:300
-                                        </div>
-                                        <div class="number">
-                                            <span>
-                                                <button class="button-add" >
-                                                    -                              </button>
-                                            </span>
-                                            <span>1</span>
-                                            <span>
-                                                <button class="button-add">
-                                                    +
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <button class="shop-button">
-                                            加入購物車
+                                <div class="number">
+                                    <span>
+                                        <button class="button-add" >
+                                            –
                                         </button>
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        <button class="button-add">
+                                            +
+                                        </button>
+                                    </span>
+                                </div>
+                                    <button class="shop-button">
+                                        加入購物車
+                                    </button>
                                    
-                                </div>
-                            </a>
-                            
+                         </div>
+                        
                         </div>
-            
+                       
+                        <div class="card-item">
+                            <a href="products-shop.html" >
+                                <div class="circle-img">
+                                      <img src="pic/cheesecakes_compress.jpg" alt="Tiramisu">
+                                </div>
+                              
+                                    <h3 class="card-name">起司蛋糕</h3>
+                            </a>    
+                            <div class="card-text">  
+                                <div class="money">
+                                            NT:250
+                                </div>
+                                <div class="number">
+                                    <span>
+                                        <button class="button-add" >
+                                            –
+                                        </button>
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        <button class="button-add">
+                                            +
+                                        </button>
+                                    </span>
+                                </div>
+                                    <button class="shop-button">
+                                        加入購物車
+                                    </button>
+                                   
+                         </div>
+                        
+                        </div>
+                        <div class="card-item">
+                            <a href="products-shop.html" >
+                                <div class="circle-img">
+                                      <img src="pic/cheesecakes_compress.jpg" alt="Tiramisu">
+                                </div>
+                              
+                                    <h3 class="card-name">起司蛋糕</h3>
+                            </a>    
+                            <div class="card-text">  
+                                <div class="money">
+                                            NT:250
+                                </div>
+                                <div class="number">
+                                    <span>
+                                        <button class="button-add" >
+                                            –
+                                        </button>
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        <button class="button-add">
+                                            +
+                                        </button>
+                                    </span>
+                                </div>
+                                    <button class="shop-button">
+                                        加入購物車
+                                    </button>
+                                   
+                         </div>
+                        
+                        </div>
+                          
+                        </div>
+                </div>
+                <div class="products-choose">
+                    <h2 class=" products-line">
+                        其他
+                    </h2>
+              
+                <div class="products-card">
+                    <div class="card-item">
+                        <a href="products-shop.html" >
+                            <div class="circle-img">
+                                  <img src="pic/Chocolate-Ganache-Tart_compress.jpg" alt="Tiramisu">
+                            </div>
+                          
+                                <h3 class="card-name">生巧克力塔</h3>
+                        </a>    
+                        <div class="card-text">  
+                            <div class="money">
+                                        NT:600
+                            </div>
+                            <div class="number">
+                                <span>
+                                    <button class="button-add" >
+                                        –
+                                    </button>
+                                </span>
+                                <span>1</span>
+                                <span>
+                                    <button class="button-add">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                                <button class="shop-button">
+                                    加入購物車
+                                </button>
+                               
+                     </div>
+                    
                     </div>
 
+                </div>
+    
+                </div>
 
-                    <div class="pager-container">
+
+                <div class="pager-container">
                         <div class="pager">
-                                <a href="#" class="frist-page">❮❮</a>
+                                <a href="#" class="first-page">❮❮</a>
                                 <a href="#" class="last-page">❮</a>
                                 <a href="#" class="num">1</a>
                                 <a href="#" class="num">2</a>
@@ -390,12 +681,13 @@
             
             
                         </div>
-                    </div>
-
                 </div>
+
+            
             </div>
-    
         </div>  
+    </div>      
+    
        
               
     

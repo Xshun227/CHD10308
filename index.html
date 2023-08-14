@@ -13,16 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all-style.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/all-js.js"></script>
 </head>
 
 <body >
-
+        <input type="checkbox" name="" id="menu-switch">
         <nav class="navbar nav ">
             <div class="iocn-name" >
                 <a href="index.html">
-                    <img src="pic/icon/iocntopic_compressed.svg" alt="icon">
+                    <img src="pic/icon/iocntopic2.svg" alt="icon">
                 </a>
             </div >
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
             <div class="nav-right nav">
                     <ul class="navbar-nav nav" > 
                         <li >
@@ -46,7 +56,7 @@
                             </a>
                     </button>   
                     <button >
-                            <a href="#">
+                            <a href="shopping-Cart.html">
                                 <img src="pic/icon/icon _shopping bag_.png" alt="shooping">
                             </a>
                   </button>    
@@ -56,28 +66,41 @@
         </nav>
     
    
-   
-   <div >
-        <img class="slideshow"src="pic/breadtitleimg_compress.jpg" alt="bread">
-         <h1 class="slideshow-text">
-            「用心烘焙，傳遞美好驚喜
-            <br>與您共享美味與溫馨的時刻」
-        </h1> 
+   <div id="slideshow-container">
+        <div class="slideshow">
+            <img src="pic/breadtitleimg_compress.jpg" alt="bread">
+            <h1 class="slideshow-text">
+                「用心烘焙，傳遞美好驚喜
+                <br>與您共享美味與溫馨的時刻」
+            </h1> 
+        </div>
+        <div class="slideshow">
+            <img src="pic/breadtitleimg02_compress.jpg" alt="bread02">
+        </div>
+        <div class="slideshow">
+            <img src="pic/breadtitleimg03_compress.jpg" alt="bread03">
+        </div>
+        <ul id="contentButton">
+		
+		</ul>
     </div>
- 
+
    <div class="about-block">
         <img src="pic/iaboutus_compress.jpg" alt="">
         <div class="about-text">
             <h2 class="about-title t-title-style" >關於我們
                 <p class="about-title-e t-style-e">about us</p>
             </h2>
-                <p class="about-textp">&ensp;&ensp;&ensp;我們的團隊追求卓越品質，並且從不妥協。 <br>烘焙師傅們經驗豐富且技藝精湛，他們用心<br>烘焙每一塊麵包、蛋糕和甜點， 確保每一口<br>都能帶給您無比的享受 
+                <p class="about-textp">&ensp;&ensp;&ensp;我們的團隊追求卓越品質，並且從不妥協。烘焙師傅們經驗豐富且技藝精湛，他們用心烘焙每一塊麵包、蛋糕和甜點， 確保每一口都能帶給您無比的享受 
                 </p>
             
-            <a href="about-us.html" class="to-more">
-                <p>更多內容</p>
-                <img src="pic/icon/arrow_compressed.svg" alt="" >
-            </a>
+                <a href="#" class="to-more">
+                    <p>更多內容</p>
+                    <div class="red-more" >
+                        <div class="arrow-a"></div>
+                        <div class="arrow-line"></div>
+                    </div> 
+                </a>
         </div>
         
    </div>
@@ -88,7 +111,7 @@
                 bestsellers
             </p>
         </h2>
-        <div class="products-card">
+        <div class="products-card index-products-card">
             <div class="card-item">
                 <a href="products-shop.html" >
                     <div class="circle-img">
@@ -104,7 +127,7 @@
                     <div class="number">
                         <span>
                             <button class="button-add" >
-                                -
+                                –
                             </button>
                         </span>
                         <span>1</span>
@@ -136,7 +159,7 @@
                     <div class="number">
                         <span>
                             <button class="button-add" >
-                                -
+                                –
                             </button>
                         </span>
                         <span>1</span>
@@ -168,7 +191,7 @@
                         <div class="number">
                             <span>
                                 <button class="button-add" >
-                                    -                             
+                                    –                      
                                  </button>
                             </span>
                             <span>1</span>
@@ -184,14 +207,79 @@
                        
                 </div>
                         
-                </div>
-                <button class="item-right" >❯</button>
-                <button class="item-left">❯</button>
             </div>
+
+            <div class="card-item">
+                <a href="products-shop.html" >
+                    <div class="circle-img">
+                        <img src="pic/cheesecakes_compress.jpg" alt="Tiramisu">
+                    </div>
+                       
+                        <h3 class="card-name">起司蛋糕</h3>
+                </a> 
+                <div class="card-text">
+                        <div class="money">
+                            NT:250
+                        </div>
+                        <div class="number">
+                            <span>
+                                <button class="button-add" >
+                                    –                      
+                                 </button>
+                            </span>
+                            <span>1</span>
+                            <span>
+                                <button class="button-add">
+                                    +
+                                </button>
+                            </span>
+                        </div>
+                        <button class="shop-button">
+                            加入購物車
+                        </button>
+                       
+                </div>
+            </div>
+
+                <div class="card-item">
+                    <a href="products-shop.html" >
+                        <div class="circle-img">
+                            <img src="pic/Chocolate-Ganache-Tart_compress.jpg" alt="Tiramisu">
+                        </div>
+                           
+                            <h3 class="card-name">生巧克力塔</h3>
+                    </a> 
+                    <div class="card-text">
+                            <div class="money">
+                                NT:600
+                            </div>
+                            <div class="number">
+                                <span>
+                                    <button class="button-add" >
+                                        –                      
+                                     </button>
+                                </span>
+                                <span>1</span>
+                                <span>
+                                    <button class="button-add">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <button class="shop-button">
+                                加入購物車
+                            </button>
+                           
+                    </div>
+                        
+                </div>
+            </div>
+               
             
-    </div>
-       
-    
+   
+    <button class="item-right" >❯</button>
+    <button class="item-left">❯</button>
+</div>
         <div>
             <h2 class="t-title-style news-title ">
                      最新消息
@@ -241,8 +329,6 @@
                             </a>
                         </div>
                 </div>
-
-
 
         </div>
     
