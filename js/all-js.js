@@ -91,7 +91,21 @@ $(document).ready(function() {
 //         });
 //     });
 // });
+//---------------------------------------------textarea--------------
+$(document).ready(function(){
+    let textMax = $('.textarea-count').attr('maxlength')
+    $('.feedback').html(`<span style="color:#cf3525;">${textMax}</span>`)
 
+    $('.textarea-count').keyup(function(){
+        let textLength = $(this).val().length
+        $('.feedback').html(`<span style="color:#cf3525;">${textMax - textLength}/300</span> `)
+    
+        // $('#content').text($(this).val()).css({
+        //     whiteSpace: 'pre',
+        //     font: '13.33px monospace',
+        // })
+    })
+})
 
 
 

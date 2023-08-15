@@ -303,6 +303,12 @@
         
      
     }
+    /* --------------textarea --------------------*/
+    .feedback{
+        margin-left: auto;
+        text-align: end;
+    }
+
 /*============================ input============= */
 .border-input {
     

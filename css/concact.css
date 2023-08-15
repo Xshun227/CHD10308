@@ -130,3 +130,12 @@ section{
 {
     content: ">>";
 }
+.textarea-count{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.feedback{
+    margin-right:3rem ;
+    margin-left: auto;
+    text-align: end;
+}

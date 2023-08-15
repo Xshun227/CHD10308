@@ -8,10 +8,15 @@
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    margin: 80px 0 40px;
+    margin: 100px 0 40px;
 
    }
-
+  
+   .produstshop-title{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+   }
    .crumbs>ol{
     font-size: 16px;
     display: flex;
@@ -71,7 +76,7 @@
         box-sizing: border-box;
         width: 120px;
         height: 40px;
-        border: 1px solid #CE7D2B;
+        /* border: 1px solid #CE7D2B; */
         line-height: 35px;
       
 
@@ -79,7 +84,8 @@
     .money-shop>button{
         width: 150px;
         height: 45px;    
-        border: 1px solid #CE7D2B;
+        border:0;
+        /* border: 1px solid #CE7D2B; */
         background: #DEA56A;
 
     }
