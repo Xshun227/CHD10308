@@ -316,7 +316,7 @@
 }
 
 .border-input:focus {
-    border: 2px solid #DEA56A;  
+    border: 1px solid #DEA56A;  
     outline: none;  
 }
 /* ------------------footer-------------------------- */
