@@ -10,6 +10,9 @@
     margin: 100px 0 20px;
 
    }
+   .main-img{
+    width: 1200px;
+   }
    .crumbs>ol{
     font-size: 16px;
     display: flex;
