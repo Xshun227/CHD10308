@@ -455,7 +455,12 @@
     .news-main-box{
         padding: 20px 2rem 60px 2rem;
     }
-    
+    .t-title-style{
+        font-size: 30px;
+    }
+    .t-style-e{
+        font-size: 16px;
+    }
    
     .footer-container{
         width: 100vw;
